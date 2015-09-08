@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Sumana:400,700);
+@import 'variables';
+
+//  DIVS
+
+#header {
+  text-align: center;
+  border-bottom: 5px solid $plum1;
+  margin-bottom: 10px;
+  color: $plum1;
+}
+
+#wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#headlines {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#headlines * {
+  font-family: $font-helper;
+  color: $plum1;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+#detail {
+  text-align: center;
+  font-family: $font-helper;
+  line-height: 1.2;
+  color: $plum1;
+
+  h2 {
+    color: $coral;
+  }
+}
+
+//  ELEMENTS
+
+h1 {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 500%;
+  margin: 0;
+}
+
+img {
+  max-width: 400px;
+}
+
+a {
+  color: $plum1;
+}
+
+//  CLASSES
+
+.category {
+  font-family: $font-main !important;
+  color: $coral !important;
+}
+
+.detailLink {
+  cursor: pointer;
+}
+
+.detailPane:not(#landing) {
+  display: none;
+}
+
+.detailText {
+  max-width: 500px;
+  margin: auto;
+}
+
+span.list, span.category {
+  padding-left: 2px;
+  padding-right: 2px;
+}

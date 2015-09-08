@@ -1,0 +1,24 @@
+{
+  "title": "Guilt Trip",
+  "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "artists": [
+    {
+      "name": "Strange Relations",
+      "url": "http://soundclodu.com/xyz",
+      "imageurl": "https://f1.bcbits.com/img/0004697476_10.jpg",
+      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "name": "SCRNS",
+      "url": "https://soundcloud.com/scrns",
+      "imageurl": "http://static.stereogum.com/uploads/2015/08/17130612/scrns-lavender-560x560.jpg",
+      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ],
+  "contact": {
+    "Email": "mailto:gunnarkauth@gmail.com",
+    "Phone": "tel:1122212221",
+    "Twitter": "https://twitter.com/gunnarkauth",
+    "Tumblr": "http://gunnarkauth.tumblr.com"
+  }
+}
