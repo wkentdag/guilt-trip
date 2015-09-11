@@ -43,14 +43,19 @@ gulp.task('compile-js', function () {
 });
 
 gulp.task('compile-html', function () {
-  del(['./index.html'], function(err) {
-    if (err) handleError(err);
-    var conf = JSON.parse(fs.readFileSync('./config.json', 'utf8') );
+  var conf = JSON.parse(fs.readFileSync('./config.json', 'utf8') );
 
-    gulp.src('./views/index.jade')
-      .pipe(plugins.jade({locals: conf}))
-      .pipe(gulp.dest('./'))
-  });
+  gulp.src('./views/index.jade')
+    .pipe(plugins.jade({locals: conf}))
+    .pipe(gulp.dest('./'))
+});
+
+gulp.task('serve', function() {
+  gulp.src('.')
+    .pipe(plugins.webserver({
+      livereload: true,
+      fallback: 'index.html'
+    }));
 });
 
 gulp.task('compile', ['compile-css', 'compile-js', 'compile-html'], function() {
@@ -62,5 +67,5 @@ gulp.task('watch', function() {
   gulp.watch(paths.dev.templates, ['compile-html']);
 });
 
-gulp.task('default', ['compile', 'watch'], function() {
+gulp.task('default', ['compile', 'serve', 'watch'], function() {
 });
