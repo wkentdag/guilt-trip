@@ -15,17 +15,38 @@ body
       h1.detailLink(data-detail='landing')= title
       
     #headlines
-      p
-        span= blurb
+      p= blurb
         
-        span.category Contact:
-        each key in Object.keys(contact)
-          a(href= contact[key] target='_blank')
-            span.list= key
+        span.category Contact
+        span :
+        each item, index in contact
+          - var href = item.link
+          - var title = item.name
+          if item.name === 'email'
+            - href = "mailto:" + item.link
+            - title = item.link
             
-        span.category Roster: 
-        each artist in artists
+          if item.name === 'phone'
+            - href = "tel:" + item.link
+            - title = item.link
+            
+          if index !== contact.length - 1
+            - title += ', '
+          else
+            - title += '. '
+            
+            
+          a(href= href target='_blank')
+            span.list= title
+            
+        span.category Roster
+        span : 
+        each artist, index in artists
           span.detailLink.list(data-detail= artist.name)= artist.name
+          if index !== artists.length - 1
+            span ,
+          else
+            span .
           
     #detail
       #landing.detailPane(data-detail='landing') 

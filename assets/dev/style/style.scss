@@ -5,14 +5,16 @@
 
 #header {
   text-align: center;
-  border-bottom: 5px solid $plum1;
+  border-bottom: 5px solid $black;
   margin-bottom: 10px;
-  color: $plum1;
+  color: $black;
 }
 
 #wrapper {
   max-width: 1000px;
   margin: auto;
+  border: 5px solid $black;
+  padding: 20px;
 }
 
 #headlines {
@@ -23,7 +25,6 @@
 
 #headlines * {
   font-family: $font-helper;
-  color: $plum1;
   line-height: 1.2;
   display: inline-block;
 }
@@ -32,10 +33,10 @@
   text-align: center;
   font-family: $font-helper;
   line-height: 1.2;
-  color: $plum1;
+  color: $black;
 
   h2 {
-    color: $coral;
+    color: $black;
   }
 }
 
@@ -60,7 +61,8 @@ a {
 
 .category {
   font-family: $font-main !important;
-  color: $coral !important;
+  color: $black !important;
+  border-bottom: 2px solid $black;
 }
 
 .detailLink {
@@ -77,6 +79,7 @@ a {
 }
 
 span.list, span.category {
+  color: $plum1;
   padding-left: 2px;
   padding-right: 2px;
 }
