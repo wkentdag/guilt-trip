@@ -2,64 +2,50 @@ doctype html
 html
 head
   title= title
-  link(rel='stylesheet', href='assets/build/style/style.min.css')
-  
-  meta(name='keywords', content='Gunnar Kauth, Guilt Trip')
-  meta(name='description' content= blurb)
+  base(href='http://localhost:8000')
+  link(rel='stylesheet' type='text/css' href='assets/build/bower_components/bootstrap/dist/css/bootstrap.min.css')
+  link(rel='stylesheet' type='text/css' href='assets/build/style/style.min.css')
+  meta(name='viewport' content="width=device-width, initial-scale=1")
   meta(name='author' content='Will Kent-Daggett')
 
 body
-  #wrapper
-  
+  .container-fluid
     #header
-      h1.detailLink(data-detail='landing')= title
-      
-    #headlines
-      p= blurb
-        
-        span.category Contact
-        span :
-        each item, index in contact
-          - var href = item.link
-          - var title = item.name
-          if item.name === 'email'
-            - href = "mailto:" + item.link
-            - title = item.link
-            
-          if item.name === 'phone'
-            - href = "tel:" + item.link
-            - title = item.link
-            
-          if index !== contact.length - 1
-            - title += ', '
-          else
-            - title += '. '
-            
-            
-          a(href= href target='_blank')
-            span.list= title
-            
-        span.category Roster
-        span : 
-        each artist, index in artists
-          span.detailLink.list(data-detail= artist.name)= artist.name
-          if index !== artists.length - 1
-            span ,
-          else
-            span .
+      .row
+        .col-xs-12.col-sm-6
+          h1= title
+          h2= position
+        .col-xs-12.col-sm-6
+          each item in contact
+            span= item.url
+          each item in profiles
+            span #{item.name}: #{item.url}
+    #work
+      .row
+        .col-xs-12
+          h2 Work Experience
+      .row
+        each w in work
+          .col-sm-12
+            h3= w.company 
+            ul.workDetails
+              li= w.date
+              li= w.location
+              li= w.url
+            p= w.blurb
+    #projects
+      .row
+        .col-xs-12
+          h2 Projects
+      .row
+        each p in projects
+          .col-xs-12
+            h3 #{p.name} (#{p.url})
+            p= p.blurb
+            p Source: #{p.source}
+                
           
-    #detail
-      #landing.detailPane(data-detail='landing') 
-        img(src='http://placehold.it/200x500')
-      each a in artists
-        .detailPane(data-detail= a.name)
-          .detailText
-            a(href= a.url target='_blank')
-              h2= a.name
-            p= a.blurb
-          img(src=a.imageurl)
             
-              
           
   script(src='assets/build/bower_components/jquery/dist/jquery.min.js')
   script(src='assets/build/scripts/scripts.min.js')
