@@ -27,22 +27,26 @@ body
       .row
         each w in work
           .col-sm-12
-            h3= w.company 
+            if w.title
+              h3 #{w.title} at #{w.company}
+            else
+              h3= w.company
+              
             ul.workDetails
               li= w.date
               li= w.location
               li= w.url
             p= w.blurb
-    #projects
-      .row
-        .col-xs-12
-          h2 Projects
-      .row
-        each p in projects
-          .col-xs-12
-            h3 #{p.name} (#{p.url})
-            p= p.blurb
-            p Source: #{p.source}
+            if w.projects
+              h5 Projects: 
+              each project in w.projects
+                p.projecTitle= project.name
+                  if project.url
+                    span  (#{project.url})
+                p= project.blurb
+                  if project.source
+                    span  Source: #{project.source}
+
                 
           
             
