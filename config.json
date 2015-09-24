@@ -7,69 +7,70 @@
     {"name": "email",
     "url": "willkentdaggett@gmail.com"},
     {"name": "phone",
-    "url": "5039565794"},
+    "url": "503.956.5794"},
     {"name": "address",
-    "url": "2535 NE 23rd Ave, Portland, OR, 97212"}
+    "url": "Los Angeles, CA"}
   ],
   "profiles": [
     {
       "name": "GitHub",
-      "url": "https://github.com/wkentdag"
+      "url": "@wkentdag"
     },
     {
       "name": "LinkedIn",
-      "url": "none"
+      "url": "@wkentdag"
     }
   ],
+  "about": "I am a full-stack developer with over two years of experience crafting responsive websites, creating database schemas, and designing scalable APIs, both as a freelancer for independent clients and as part of a development team. I also have several years' experience mining large data sets to generate programmatic art and music. I believe that beautiful design predicates elegant code, and vice versa; I am looking for a job that positions me at their point of intersection.",
   "skills": [
     {
       "title": "Front-end Development",
       "skills": [
-        "Mobile-first responsive design", "iOS", "Custom CMS", "Custom Tumblr themes", "Automated, agile development"
+        "mobile-first responsive design", "iOS", "custom CMS", "custom Tumblr themes"
       ],
       "tools": [
         "Javascript", "jQuery", "Objective-C", "HTML5", "CSS3", "Sass", "Jade",
-        "Haml", "Bootstrap", "Gulp"
+        "Bootstrap", "Gulp"
       ]
     },
     {
       "title": "Server-side Development",
       "skills": [
         "database schema design", "API design",
-        "test-driven development", "third-party API integration", "integrated development"
+        "test-driven development", "third-party API integration"
       ],
       "tools": [
-        "Node.js", "Express", "SQL", "PostgreSQL", "MongoDB", "Bash", "Mocha", "Nginx", "Linux"
+        "Node.js", "Express", "PostgreSQL", "MongoDB", "Bash", "Mocha", "Nginx", "Unix"
       ]
     },
     {
       "title": "Other",
-      "skills": [],
       "tools": [
-        "Java", "Python", "C/C++", "Max/MSP/Jitter", "Git", "Adobe Creative Suite"
+        "Java", "Python", "C", "Max/MSP", "Git", "Adobe Creative Suite"
       ]
     }
   ],
   "education": [
     {
       "name": "Macalester College",
+      "location": "Saint Paul, MN",
       "date": "2011 - 2015",
       "details": [
         "Media and Cultural Studies major",
         "Computer Science minor",
-        "Critical Theory concentration",
-        "Dean's List - Fall 2012, Spring 2013, Fall 2013"
+        "Critical Theory concentration"
       ],
       "projects": [
         {
           "name": "Sup",
           "source": "https://github.com/wkentdag/sup, https://github.com/sbwf/sup-client",
-          "blurb": "Location-based, privacy- and simplicity-oriented social network that allows users to temporarily share their current location to a subset of followers. Comprised of an API webserver and separate iOS client. Built with Node.js, Express, and Objecive-C. Developed during Software Design class at Macalester College, Spring 2014."
+          "blurb": "Privacy- and simplicity-oriented social network that allows users to temporarily share their current location to a subset of followers. Comprised of an API webserver and separate iOS client. Built with Node.js, Express, and Objecive-C. Developed during Software Design class at Macalester College, Spring 2014."
         }
       ]
     },
     {
       "name": "IES Madrid",
+      "location": "Madrid, Spain",
       "date": "2013",
       "details": [
         "Semester-long study abroad program in Madrid",
@@ -81,7 +82,7 @@
     {
       "company": "Freelance Web Developer",
       "date": "2014-present",
-      "blurb": "Design, build, deploy, and maintain websites for clients, from mock-ups to analytics.",
+      "blurb": "Design, build, deploy, and maintain websites for clients.",
       "projects": [
         {
           "name": "Will Matsuda",
@@ -93,7 +94,7 @@
           "name": "Guilt Trip Management",
           "source": "https://github.com/wkentdag/guilt-trip",
           "url": "guilttrip.biz",
-          "blurb": "Simple static website for Minneapolis-based artist booking and management company."
+          "blurb": "Simple static website for Minneapolis-based booking and management company."
         }
       ]
     },
@@ -102,8 +103,8 @@
       "url": "http://wmcn.fm",
       "location": "St. Paul, MN",
       "date": "2011-2015",
-      "title": "Web Director, General Manager",
-      "blurb": "As Web Director (2012-2015), had sole responsibility for updating, designing, and maintaining the station's website. As General Manager (Fall 2014), had the additional repsonsibility of managing the station's budget, overseeing a half-dozen managers as well as a staff of over a hundred.",
+      "title": "Web Director",
+      "blurb": "As Web Director (2012-2015), had sole responsibility for updating, designing, and maintaining the station's website. As General Manager (Fall 2014), managed the station's budget and oversaw a half-dozen managers as well as a staff of over a hundred.",
       "projects": [
         {
           "name": "WMCN.fm",
@@ -115,7 +116,7 @@
           "name": "WMCN API",
           "source": "https://github.com/wmcn-fm/wmcn-api",
           "url": "http://api.wmcn.fm",
-          "blurb": "Standalone API layer for WMCN's PostgreSQL database, developed to allow subsequent developers to build separate iOS, Android, or web interfaces for the station. Built with Node.js and Express."
+          "blurb": "Standalone API layer for WMCN's PostgreSQL database. Built with Node.js and Express."
         }
       ]
     },
@@ -125,12 +126,12 @@
       "location": "St. Paul, MN",
       "date": "2013-2014",
       "title": "Research Assistant",
-      "blurb": "Collaborated with Professor John Kim over the course of two summers to develop a Max/MSP-based sound installation that was exhibited at Macalester College during Fall 2014. Awarded a Wallace Summer Research Grant for summer 2014.",
+      "blurb": "Collaborated with Professor John Kim to develop a programmatic art installation. Awarded a Wallace Summer Research Grant for Summer 2014.",
       "projects": [
         {
           "name": "Timelaps",
           "source": "https://github.com/wkentdag/timelaps",
-          "blurb": "Sound installation that represents current weather conditions at Lake Superior, MN in the form of ambient music. Comprised of a Python application that mines realtime weather data from NOAA and a Max/MSP program to sonify the data. Developed in collaboration with John Kim as part of a research project from 2013-214. Exhibited at Macalester College, fall 2014."
+          "blurb": "Sound installation that represents current weather conditions at Lake Superior, MN as ambient music. Comprised of a Python application that mines realtime weather data and a Max/MSP program to sonify the data. Exhibited at Macalester College, Fall 2014."
         }
       ]
 
@@ -141,12 +142,12 @@
       "location": "Minneapolis, MN",
       "date": "2013",
       "title": "Sound Design + Programming Assistant",
-      "blurb": "Collaborated with the lead sound designer to develop a Max/MSP-based sound installation as part of a project that was a finalist for the 2013 Minneapolis Creative City Challenge",
+      "blurb": "Helped develop a Max/MSP-based sound installation as part of a project that was a finalist for the 2013 Minneapolis Creative City Challenge",
       "projects": [
         {
           "name": "Lakeforms",
           "url": "http://futures-north.com/projects/lakeforms",
-          "blurb": "Dynamic, interactive public pavilion that invites residents and visitors into the Minneapolis Convention Center plaza to relax, explore, and learn about Minneapolis's urban lakes. The pavilion's physical structure is a digitally enhanced scale model of the lakes' underwater topogrpahy. Inside the structure, visitors can engage with ambient music derived from realtime weather data collected across Minneapolis' urban lakes."
+          "blurb": "Dynamic, interactive public pavilion that invites visitors to learn about Minneapolis's urban lakes. The pavilion's physical structure is a digitally enhanced scale model of the lakes' underwater topogrpahy. Inside the structure, visitors can engage with ambient music derived from realtime weather data collected across Minneapolis' urban lakes using custom 'smart buoys'."
         }
       ]
     },
@@ -159,28 +160,12 @@
       "blurb": "Used Instagram, Leaflet, Stripe, Flickr, and Facebook APIs to add various features to the Walker's award-winning website."
     },
     {
-      "company": "Macalester College Program Board",
-      "url": "http://macalester.edu/pb",
-      "location": "St. Paul, MN",
-      "date": "2012-2013",
-      "title": "Concerts & Festivals Co-chair",
-      "blurb": "Selected to a small student committee responsible for planning most of the college's large-scale student events for the year. Served as co-chair of an independent concert-planning subcommittee with a total budget of about $60,000"
-    },
-    {
       "company": "Yale Union Contemporary",
       "url": "http://yaleunion.org",
       "location": "Portland, OR",
       "date": "2012",
       "title": "Gallery Intern",
-      "blurb": "Worked closely with the center's director to plan and build a new cinema room and the summer 2012 exhibition space"
-    },
-    {
-      "company": "Music in the Schools, Inc.",
-      "url": "@pdxmits",
-      "location": "Portland, OR",
-      "date": "2008-2011",
-      "title": "Vice-President, Founding Board Member",
-      "blurb": "Helped start a student-run, 501(c)(3)-accredited nonprofit to raise money for Portland Public Schools music programs by hosting monthly student concerts and annual benefit shows"
+      "blurb": "Helped plan and build a new cinema room and the summer 2012 exhibition space."
     }
   ],
   "references": [
@@ -193,7 +178,7 @@
         },
         {
           "company": "Futures North",
-          "title": "Member"
+          "title": "Partner"
         }
       ],
       "contact": {

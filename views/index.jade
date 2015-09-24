@@ -12,18 +12,20 @@ body
   .container-fluid
     #header
       .row
-        .col-xs-12.col-sm-6
+        .col-xs-12
           h1= title
-          h2= position
-        .col-xs-12.col-sm-6
-          each item in contact
-            span= item.url
-          each item in profiles
-            span #{item.name}: #{item.url}
+          ul.inline-list
+            each item in contact
+              li= item.url
+            each item in profiles
+              li #{item.name}: #{item.url}
+      .row
+        .col-xs-12
+          p= about
     #work
       .row
         .col-xs-12
-          h2 Work Experience
+          h2.category-header Work Experience:
       .row
         each w in work
           .col-sm-12
@@ -32,24 +34,61 @@ body
             else
               h3= w.company
               
-            ul.workDetails
+            ul.workDetails.inline-list
               li= w.date
               li= w.location
               li= w.url
             p= w.blurb
             if w.projects
-              h5 Projects: 
-              each project in w.projects
-                p.projecTitle= project.name
-                  if project.url
-                    span  (#{project.url})
-                p= project.blurb
-                  if project.source
-                    span  Source: #{project.source}
-
-                
-          
+              .subcategory
+                each project in w.projects
+                  p
+                    span.projectTitle= project.name
+                      if project.url
+                        span  (#{project.url})
+                    span : #{project.blurb}
+                      if project.source
+                        span  Source: #{project.source}
+    #skills
+      .row
+        .col-xs-12
+          h2.category-header Skills:
+          each section in skills
+            br
+            h4 #{section.title}:
+            ul.inline-list
+              each tool in section.tools
+                li= tool
+              
+    #education
+      .row
+        .col-xs-12
+          h2.category-header Education:
+      .row
+        .col-xs-12
+            each ed in education
+              h4= ed.name
+              ul.inline-list
+                li= ed.date
+                li= ed.location
+                each d in ed.details
+                  li= d
+              br
+    #references
+      .row
+        .col-xs-12
+          h2.category-header References:
+      .row
+        .col-xs-12
+          each person in references
+            br
+            h4= person.name
+            ul.inline-list
+              each job in person.job
+                li #{job.title} - #{job.company}
+              li= person.contact.email
+              if person.contact.phone
+                li= person.contact.phone
             
-          
   script(src='assets/build/bower_components/jquery/dist/jquery.min.js')
   script(src='assets/build/scripts/scripts.min.js')

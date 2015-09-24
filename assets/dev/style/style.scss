@@ -1,6 +1,57 @@
 @import 'variables';
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $font-header;
+  border-bottom: 2px dotted;
+  display: inline-block;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 0 !important;
+}
+
+h1, h2 {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 0.75em;
+}
+
+h4, h5, h6 {
+  font-size: 0.6em;
+}
+
+p, span, ul, li {
   font-family: $font-main;
-  border-bottom: 1px dotted;
+}
+
+p {
+  font-size: 0.7em;
+}
+
+
+li {
+  display: inline-block;
+  margin-left: 10px;
+  border-bottom: 2px solid;
+  font-size: 0.7em;
+}
+
+ul.inline-list {
+  display: inline-block;
+}
+
+.category-header {
+  border-bottom: 2px solid;
+}
+
+.subcategory {
+  margin-left: 15px;
+}
+
+
+.projectTitle {
+  border-bottom: 2px dotted;
+  margin-right: 5px;
 }
