@@ -34,10 +34,6 @@
   font-family: $font-helper;
   line-height: 1.2;
   color: $black;
-
-  h2 {
-    color: $black;
-  }
 }
 
 //  ELEMENTS
@@ -55,6 +51,7 @@ img {
 
 a {
   color: $plum1;
+  text-decoration: none;
 }
 
 //  CLASSES
@@ -78,8 +75,7 @@ a {
   margin: auto;
 }
 
-span.list, span.category {
-  color: $plum1;
+.list, .category {
   padding-left: 2px;
   padding-right: 2px;
 }

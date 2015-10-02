@@ -3,7 +3,7 @@ html
 head
   title= title
   link(rel='stylesheet', href='assets/build/style/style.min.css')
-  
+  link(rel='shortcut icon' href='assets/build/images/logo.ico?v=2')
   meta(name='keywords', content='Gunnar Kauth, Guilt Trip')
   meta(name='description' content= blurb)
   meta(name='author' content='Will Kent-Daggett')
@@ -30,34 +30,39 @@ body
             - href = "tel:" + item.link
             - title = item.link
             
-          if index !== contact.length - 1
-            - title += ', '
-          else
-            - title += '. '
-            
-            
           a(href= href target='_blank')
             span.list= title
             
-        span.category Roster
+          if index !== contact.length - 1
+            span ,
+          else 
+            span .
+            
+        span.category Current Projects
         span : 
         each artist, index in artists
-          span.detailLink.list(data-detail= artist.name)= artist.name
+          a.detailLink.list(data-detail= artist.name)= artist.name
           if index !== artists.length - 1
-            span ,
+            span ,  
           else
             span .
           
     #detail
       #landing.detailPane(data-detail='landing') 
-        img(src='http://placehold.it/200x500')
+        img(src='assets/build/images/logo.png')
       each a in artists
         .detailPane(data-detail= a.name)
           .detailText
-            a(href= a.url target='_blank')
-              h2= a.name
+            h2= a.name
+            img(src=a.imageurl)
             p= a.blurb
-          img(src=a.imageurl)
+              each link, index in a.urls
+                span 
+                  a(href= link.url target='_blank')= link.name
+                  if index !== a.urls.length - 1
+                    span , 
+                  else
+                    span .
             
               
           

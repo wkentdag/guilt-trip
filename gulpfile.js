@@ -10,12 +10,14 @@ var paths = {
   dev: {
     scripts: './assets/dev/scripts/*.js',
     style: './assets/dev/style/*.scss',
-    templates: './views/*.jade'
+    templates: './views/*.jade',
+    images: './assets/dev/images/*'
   },
   build: {
     scripts: './assets/build/scripts/',
     style: './assets/build/style/',
-    templates: './*.html'
+    templates: './*.html',
+    images: './assets/build/images/'
   }
 }
 
@@ -42,6 +44,11 @@ gulp.task('compile-js', function () {
   });
 });
 
+gulp.task('images', function () {
+  gulp.src(paths.dev.images)
+    .pipe(gulp.dest(paths.build.images));
+});
+
 gulp.task('compile-html', function () {
   var conf = JSON.parse(fs.readFileSync('./config.json', 'utf8') );
 
@@ -58,13 +65,14 @@ gulp.task('serve', function() {
     }));
 });
 
-gulp.task('compile', ['compile-css', 'compile-js', 'compile-html'], function() {
+gulp.task('compile', ['compile-css', 'compile-js', 'compile-html', 'images'], function() {
 })
 
 gulp.task('watch', function() {
   gulp.watch(paths.dev.scripts, ['compile-js']);
   gulp.watch(paths.dev.style, ['compile-css']);
   gulp.watch(paths.dev.templates, ['compile-html']);
+  gulp.watch(paths.dev.images, ['images']);
 });
 
 gulp.task('default', ['compile', 'serve', 'watch'], function() {
