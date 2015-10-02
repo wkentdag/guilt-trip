@@ -1,22 +1,23 @@
 {
-  "name": "guilt-trip",
+  "name": "cv",
   "version": "1.0.0",
-  "description": "guilttrip.biz",
+  "description": "my cv",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "sh ./build.sh"
+    "deploy": "sh ./build.sh",
+    "export": "html-pdf index.html cv.pdf"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wkentdag/guilt-trip.git"
+    "url": "https://github.com/wkentdag/cv.git"
   },
   "author": "will kent-daggett",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wkentdag/guilt-trip/issues"
+    "url": "https://github.com/wkentdag/cv/issues"
   },
-  "homepage": "https://github.com/wkentdag/guilt-trip",
+  "homepage": "https://github.com/wkentdag/cv",
   "devDependencies": {
     "del": "^1.2.0",
     "fs": "0.0.2",
