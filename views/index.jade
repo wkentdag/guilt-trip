@@ -30,6 +30,9 @@ body
             - href = "tel:" + item.link
             - title = item.link
             
+          if item.info
+            - title +=  " (" +item.info+ ") " 
+            
           a(href= href target='_blank')
             span.list= title
             
@@ -38,31 +41,31 @@ body
           else 
             span .
             
-        span.category Current Projects
-        span : 
-        each artist, index in artists
-          a.detailLink.list(data-detail= artist.name)= artist.name
-          if index !== artists.length - 1
-            span ,  
-          else
-            span .
-          
+        //- span.category Current Projects
+        //- span : 
+        //- each artist, index in artists
+        //-   a.detailLink.list(data-detail= artist.name)= artist.name
+        //-   if index !== artists.length - 1
+        //-     span ,  
+        //-   else
+        //-     span .
+        //-   
     #detail
       #landing.detailPane(data-detail='landing') 
         img(src='assets/build/images/logo.png')
-      each a in artists
-        .detailPane(data-detail= a.name)
-          .detailText
-            h2= a.name
-            img(src=a.imageurl)
-            p= a.blurb
-              each link, index in a.urls
-                span 
-                  a(href= link.url target='_blank')= link.name
-                  if index !== a.urls.length - 1
-                    span , 
-                  else
-                    span .
+      //- each a in artists
+      //-   .detailPane(data-detail= a.name)
+      //-     .detailText
+      //-       h2= a.name
+      //-       img(src=a.imageurl)
+      //-       p= a.blurb
+      //-         each link, index in a.urls
+      //-           span 
+      //-             a(href= link.url target='_blank')= link.name
+      //-             if index !== a.urls.length - 1
+      //-               span , 
+      //-             else
+      //-               span .
                 
   script(src='assets/build/bower_components/jquery/dist/jquery.min.js')
   script(src='assets/build/scripts/scripts.min.js')

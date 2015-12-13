@@ -44,15 +44,18 @@
   "contact": [
     {
       "name": "email",
-      "link": "info@guilttrip.biz"
+      "link": "info@guilttrip.biz",
+      "info": "General"
     },
     {
       "name": "email",
-      "link": "gunnar@guilttrip.biz"
+      "link": "gunnar@guilttrip.biz",
+      "info": "Minneapolis"
     },
     {
       "name": "email",
-      "link": "preston@guilttrip.biz"
+      "link": "preston@guilttrip.biz",
+      "info": "Philadelphia"
     },
     {
       "name": "Twitter",
